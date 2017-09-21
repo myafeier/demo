@@ -9,8 +9,8 @@ RUN	mkdir /go
 COPY testbin/test /go
 WORKDIR /go
 VOLUME ["/go"]
-EXPOSE 8080 8080
-CMD ["/go/test"]
+EXPOSE 8081
+ENTRYPOINT ["/go/test"]
 
 
 
