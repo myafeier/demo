@@ -6,7 +6,7 @@ FROM alpine:3.6
 #COPY *.patch /go-alpine-patches/
 
 RUN	mkdir /go
-COPY testBin/test /go
+COPY testbin/test /go
 WORKDIR /go
 VOLUME ["/go"]
 EXPOSE 8080 8080
